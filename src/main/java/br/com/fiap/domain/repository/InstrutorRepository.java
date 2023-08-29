@@ -18,6 +18,7 @@ public class InstrutorRepository implements Repository<Instrutor, Long> {
 
     /**
      * Padrão Singleton
+     *
      * @return
      */
     public static InstrutorRepository of() {
@@ -34,7 +35,6 @@ public class InstrutorRepository implements Repository<Instrutor, Long> {
     }
 
 
-
     @Override
     public List<Instrutor> findAll() {
         return professores.stream().toList();
@@ -47,13 +47,13 @@ public class InstrutorRepository implements Repository<Instrutor, Long> {
 
     @Override
     public List<Instrutor> findByName(String texto) {
-        return professores.stream().filter( p->p.getNome().toLowerCase().contains( texto.toLowerCase() ) ).toList();
+        return professores.stream().filter( p -> p.getNome().toLowerCase().contains( texto.toLowerCase() ) ).toList();
     }
 
     @Override
     public Instrutor persist(Instrutor instrutor) {
-        if(Objects.isNull( instrutor )) return null;
-        if(Objects.isNull( instrutor.getId() )) instrutor.setId( professores.size() + 1L );
+        if (Objects.isNull( instrutor )) return null;
+        if (Objects.isNull( instrutor.getId() )) instrutor.setId( professores.size() + 1L );
         professores.add( instrutor );
         return instrutor;
     }

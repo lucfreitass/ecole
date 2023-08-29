@@ -17,9 +17,9 @@ public class CursoRepository implements Repository<Curso, Long> {
     }
 
 
-
     /**
      * Padrão Singleton
+     *
      * @return
      */
     public static CursoRepository of() {
@@ -48,13 +48,13 @@ public class CursoRepository implements Repository<Curso, Long> {
 
     @Override
     public List<Curso> findByName(String texto) {
-        return cursos.stream().filter( c->c.getNome().toLowerCase().contains( texto.toLowerCase() ) ).toList();
+        return cursos.stream().filter( c -> c.getNome().toLowerCase().contains( texto.toLowerCase() ) ).toList();
     }
 
     @Override
     public Curso persist(Curso curso) {
-        if(Objects.isNull( curso )) return null;
-        if(Objects.isNull( curso.getId() )) curso.setId( cursos.size() + 1L );
+        if (Objects.isNull( curso )) return null;
+        if (Objects.isNull( curso.getId() )) curso.setId( cursos.size() + 1L );
         cursos.add( curso );
         return curso;
     }
