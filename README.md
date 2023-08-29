@@ -75,37 +75,42 @@ atividade.
 
    1. É necessário implementar corretamente os métodos da interface Service;
 
-4. **(2 Pontos)** implementar corretamente a classe **TurmaService**.
+4. **(1 Pontos)** implementar corretamente a classe **TurmaService**.
 
    Lembre-se que:
 
    1. É necessário implementar corretamente os métodos da interface Service;
+
+
+5. **(1,5 Pontos)** implementar corretamente a classe **AlunoRepository** .
+
+   Lembre-se que:
+
+   1. É necessário implementar corretamente os métodos da interface Repository;
+   2. Deverá adotar o padrão Singleton (https://refactoring.guru/pt-br/design-patterns/singleton/java/example#example-2)
+
+6. **(1,5 Pontos)** implementar corretamente a classe **CursoRepository** .
+
+   Lembre-se que:
+
+   1. É necessário implementar corretamente os métodos da interface Repository;
+   2. Deverá adotar o padrão Singleton (https://refactoring.guru/pt-br/design-patterns/singleton/java/example#example-2)
+
+7. **(1,5 Pontos)** implementar corretamente a classe **IntrutorRepository** .
+
+   Lembre-se que:
+
+   1. É necessário implementar corretamenteos métodos da interface Repository;
+   2. Deverá adotar o padrão Singleton (https://refactoring.guru/pt-br/design-patterns/singleton/java/example#example-2)
+
+8. **(1,5 Pontos)** implementar corretamente a classe **TurmaRepository** .
+
+   Lembre-se que:
+
+   1. É necessário implementar corretamenteos métodos da interface Repository;
    2. O método findByName deverá buscar pelo nome do Curso;
+   3. Deverá adotar o padrão Singleton (https://refactoring.guru/pt-br/design-patterns/singleton/java/example#example-2)
 
-
-5. **(1 Pontos)** implementar corretamente a classe **AlunoRepository** .
-
-   Lembre-se que:
-
-   1. É necessário implementar corretamente os métodos da interface Repository;
-
-6. **(1 Pontos)** implementar corretamente a classe **CursoRepository** .
-
-   Lembre-se que:
-
-   1. É necessário implementar corretamente os métodos da interface Repository;
-
-7. **(1 Pontos)** implementar corretamente a classe **IntrutorRepository** .
-
-   Lembre-se que:
-
-   1. É necessário implementar corretamenteos métodos da interface Repository;
-
-8. **(2 Pontos)** implementar corretamente a classe **TurmaRepository** .
-
-   Lembre-se que:
-
-   1. É necessário implementar corretamenteos métodos da interface Repository;
 
 <a id="_Diagrama_de_Classes"></a>
 
