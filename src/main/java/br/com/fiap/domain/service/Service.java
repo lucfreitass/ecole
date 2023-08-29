@@ -18,7 +18,12 @@ public interface Service<T, U> {
         return Objects.nonNull( s ) && !s.trim().isEmpty();
     }
 
-
+    /**
+     * Validando email
+     *
+     * @param emailAddress
+     * @return
+     */
     default boolean validarEmail(String emailAddress) {
         //Expressão Regular. Para saber mais:
         //Dica de leitura: Expressões Regulares: Uma Abordagem Divertida

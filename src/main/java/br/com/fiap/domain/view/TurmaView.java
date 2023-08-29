@@ -56,11 +56,11 @@ public class TurmaView extends Component implements View<Turma, Long> {
 
         var cursos = cursoService.findAll();
 
-        curso = (Curso) JOptionPane.showInputDialog( null, "Selecione o Curso", "Curso", JOptionPane.QUESTION_MESSAGE, null, cursos.toArray(), Objects.nonNull( cursos ) ? cursos.get( 0 ) : null );
+        curso = (Curso) JOptionPane.showInputDialog( null, "Selecione o Curso", "Curso", JOptionPane.QUESTION_MESSAGE, null, cursos.toArray(), Objects.nonNull( cursos ) && cursos.size() > 0 ? cursos.get( 0 ) : null );
 
         var instrutores = instrutorService.findAll();
 
-        instrutor = (Instrutor) JOptionPane.showInputDialog( null, "Selecione o Professor", "Professor", JOptionPane.QUESTION_MESSAGE, null, instrutores.toArray(), Objects.nonNull( instrutores ) ? instrutores.get( 0 ) : null );
+        instrutor = (Instrutor) JOptionPane.showInputDialog( null, "Selecione o Professor", "Professor", JOptionPane.QUESTION_MESSAGE, null, instrutores.toArray(), Objects.nonNull( instrutores ) && instrutores.size() > 0 ? instrutores.get( 0 ) : null );
 
 
         LocalDate inicio = null;

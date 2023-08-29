@@ -41,9 +41,9 @@ public class MenuView {
                         32 - Consulta Curso pelo nome
                         
                     4 - Abrir nova Turma
-                        40 - Listagem de Matriculas
-                        41 - Consulta Matricula pelo id
-                        42 - Consulta Matricula pelo nome do Professor 
+                        40 - Listagem de Turmas
+                        41 - Consulta Turma pelo id
+                        42 - Consulta Turma pelo nome do Professor 
                         
                     5 - Realizar Matricula
                                            
@@ -116,25 +116,29 @@ public class MenuView {
                 //Opções para matrícula
                 case 4 -> {
                     Turma turma = turmaView.persist( null );
-                    System.out.println( turma );
+                    System.out.println( turma.toString(true) );
                 }
 
                 case 40 -> {
-                    turmaView.findAll().forEach( System.out::println );
+                    turmaView.findAll().forEach( t->{
+                        System.out.println( t.toString(true) );
+                    } );
                 }
 
                 case 41 -> {
                     Turma turma = turmaView.findById( null );
-                    System.out.println( turma );
+                    System.out.println( turma.toString(true) );
                 }
 
                 case 42 -> { //Buscando pelo nome do professor da Turma
-                    turmaView.findByName( null ).forEach( System.out::println );
+                    turmaView.findByName( null ).forEach( t->{
+                        System.out.println( t.toString(true) );
+                    } );
                 }
 
                 case 5 -> {
                     Turma matricula = turmaView.matricular( null );
-                    System.out.println( matricula );
+                    System.out.println( matricula.toString(true) );
                 }
 
                 //Deseja Realmente sair?

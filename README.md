@@ -80,6 +80,7 @@ atividade.
    Lembre-se que:
 
    1. É necessário implementar corretamente os métodos da interface Service;
+   2. O método findByName deverá buscar pelo nome do Curso;
 
 
 5. **(1 Pontos)** implementar corretamente a classe **AlunoRepository** .
